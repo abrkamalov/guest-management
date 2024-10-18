@@ -1,0 +1,106 @@
+.table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.tableHeader {
+  background-color: #f3f4f6;
+}
+
+.headerCell {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6b7280;
+}
+
+.headerCellAction {
+  composes: headerCell;
+  text-align: center;
+  width: 3rem;
+}
+
+.tableRow {
+  cursor: pointer;
+}
+
+.tableRow:hover {
+  background-color: #f9fafb;
+}
+
+.tableCell {
+  padding: 1rem 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tableCellAction {
+  composes: tableCell;
+  text-align: center;
+}
+
+.removeButton {
+  background: none;
+  cursor: pointer;
+  color: #ef4444;
+}
+
+.removeButton:hover {
+  color: white;
+}
+
+.noGuests {
+  text-align: center;
+  padding: 1rem 0;
+  color: #6b7280;
+  font-style: italic;
+}
+
+@media (max-width: 767px) {
+    .table {
+        font-size: 0.875rem;
+    }
+
+    .tableRow {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #e5e7eb;
+        padding: 0.5rem 0;
+    }
+
+    .tableCell {
+        border: none;
+        padding: 0.25rem 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .tableCellAction {
+        justify-content: space-between;
+    }
+
+    .headerCell {
+        display: none;
+    }
+
+    .tableCell::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 0.5rem;
+    }
+
+    .removeButton {
+        padding: 0.5rem;
+        background-color: transparent;
+        border: none;
+        color: #ef4444;
+    }
+
+    .removeButton:hover {
+        color: #dc2626;
+    }
+}

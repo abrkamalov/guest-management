@@ -1,0 +1,23 @@
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.main {
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: linear-gradient(to bottom right, var(--color-background), var(--color-secondary));
+    padding: 2rem;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+.fullWidth {
+    margin-left: 0;
+}
+
+@media (max-width: 767px) {
+    .main {
+        padding: 1rem;
+    }
+}

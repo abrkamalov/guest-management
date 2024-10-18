@@ -1,0 +1,100 @@
+.sidebar {
+    background: linear-gradient(to bottom, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
+    transition: all 0.3s ease-in-out;
+}
+
+.expanded {
+    width: 16rem;
+}
+
+.collapsed {
+    width: 5rem;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 4rem;
+}
+
+.collapsed .header {
+    justify-content: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    white-space: nowrap;
+    color: white;
+}
+
+.toggleButton {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggleButton:hover {
+    opacity: 0.8;
+}
+
+.navLink {
+    display: flex;
+    padding: 0.75rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #f3f4f6;
+}
+
+.collapsed .navLink {
+    justify-content: center;
+}
+
+.navIcon {
+    margin-right: 1rem;
+}
+
+.collapsed .navIcon {
+    margin-right: 0;
+}
+
+.navText {
+    white-space: nowrap;
+    opacity: 1;
+}
+
+.collapsed .navText {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+}
+
+.rotateIcon {
+    transform: rotate(180deg);
+}
+
+.activeNavLink {
+    background-color: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.activeNavLink:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+        display: none;
+    }
+}

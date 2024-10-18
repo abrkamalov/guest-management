@@ -1,0 +1,13 @@
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.fieldTitle {
+  font-weight: bold;
+}
+
+.list {
+  list-style-type: disc;
+}

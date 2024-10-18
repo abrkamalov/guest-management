@@ -1,0 +1,30 @@
+:root {
+  --color-primary: #2563eb;
+  --color-primary-dark: #1d4ed8;
+  --color-secondary: #e5e7eb;
+  --color-secondary-dark: #d1d5db;
+  --color-danger: #dc2626;
+  --color-danger-dark: #b91c1c;
+  --color-text-primary: #374151;
+  --color-text-secondary: #6b7280;
+  --color-background: #f9f9f9;
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --sidebar-width-expanded: 16rem;
+  --sidebar-width-collapsed: 5rem;
+}
+
+body {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  background-color: var(--color-secondary);
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--color-primary);
+}

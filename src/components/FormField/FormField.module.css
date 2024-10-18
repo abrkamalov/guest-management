@@ -1,0 +1,40 @@
+.label {
+  font-weight: 500;
+  color: var(--color-text-primary);
+}
+
+.inputContainer {
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+.removeButton {
+  margin-left: 0.5rem;
+}
+
+.removeButton:hover {
+  color: #ef4444;
+}
+
+.error {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: #ef4444;
+}
+
+.input::placeholder {
+  color: #9ca3af;
+  font-style: italic;
+}
